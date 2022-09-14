@@ -1152,12 +1152,12 @@ p {
       z-index: 3;
       left: -100%;
       background-color: #fff;
-      transition: left ease-in-out .5s;
+      transition: left ease-in-out .5s -0.1s;
    }
 
    .burger_active .burger__content {
       left: 0 !important;
-      box-shadow: -25px 0 250px black;
+      box-shadow: 3px 0 100px black;
    }
 
    .burger__nav {
