@@ -10,12 +10,14 @@ window.addEventListener('DOMContentLoaded', function () {
    burgerIcon.addEventListener('click', () => {
       toggleBurger()
       toggleStyle(body, 'overflow', 'hidden')
+      toggleStyle(body, 'marginRight', '17px')
 
       // click to empty place right burger
       window.addEventListener('click', e => {
          if (!e.target.closest('.burger')) {
             burger.classList.remove('burger_active')
             body.style.overflowY = 'auto'
+            body.style.marginRight = '0'
          }
       })
 
@@ -72,6 +74,7 @@ window.addEventListener('DOMContentLoaded', function () {
          if (burger.classList.contains('burger_active')) {
             toggleBurger()
             toggleStyle(body, 'overflow', 'hidden')
+            toggleStyle(body, 'marginRight', '17px')
          }
       }
    }
