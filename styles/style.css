@@ -969,7 +969,7 @@ p {
    }
 
    .about__left {
-      background: url(images/1024/about.png);
+      background: url(../images/1024/about.png);
       height: 640px;
       width: 100%;
       margin-bottom: 32px;
@@ -1306,7 +1306,7 @@ p {
 
    /* ABOUT */
    .about__left {
-      background: url(images/768/about.png);
+      background: url(../images/768/about.png);
       height: 650px;
       max-height: 650px;
       width: 100%;
@@ -1711,7 +1711,7 @@ p {
    }
 
    .about__left {
-      background: url(images/320/about.png);
+      background: url(../images/320/about.png);
       height: 399px;
       margin-bottom: 11%;
       border-radius: 12px;
