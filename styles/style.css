@@ -745,6 +745,7 @@ p {
    top: 4px;
    padding-top: 1px;
    padding-left: 1px;
+   pointer-events: none;
 }
 
 .form__checkbox:checked+.form__svg {
@@ -759,7 +760,7 @@ p {
    position: absolute;
    left: 2px;
    top: 2px;
-
+   pointer-events: none;
 }
 
 .form__chbx-label {
