@@ -9,9 +9,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
    burgerIcon.addEventListener('click', () => {
       toggleBurger()
+      toggleStyle(body, 'marginRight', window.innerWidth - document.documentElement.clientWidth + 'px')
       toggleStyle(body, 'overflow', 'hidden')
-      toggleStyle(body, 'marginRight', '17px')
-
       // click to empty place right burger
       window.addEventListener('click', e => {
          if (!e.target.closest('.burger')) {
@@ -56,7 +55,6 @@ window.addEventListener('DOMContentLoaded', function () {
       })
 
       function menuLinkClick(el) {
-
          const linkTo = el.target
          const goToBlock = document.querySelector(linkTo.dataset.goto)
 
@@ -67,14 +65,13 @@ window.addEventListener('DOMContentLoaded', function () {
                top: goToBlockValue,
                behavior: "smooth",
             })
-
             el.preventDefault()
          }
 
          if (burger.classList.contains('burger_active')) {
             toggleBurger()
             toggleStyle(body, 'overflow', 'hidden')
-            toggleStyle(body, 'marginRight', '17px')
+            toggleStyle(body, 'marginRight', window.innerWidth - document.documentElement.clientWidth + 'px')
          }
       }
    }
